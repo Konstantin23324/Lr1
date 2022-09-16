@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lr1.MainPage">
 
-    <StackLayout>
+
         <Grid ColumnDefinitions="*,*">
             <ScrollView Grid.Column="0">
                 <CollectionView ItemsSource="{Binding Animals}"
@@ -60,7 +60,6 @@
                        HorizontalTextAlignment="Center"/>
             </ScrollView>
         </Grid>
-    </StackLayout>
 </ContentPage>
 
 
