@@ -4,10 +4,9 @@ namespace Lr1;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
-	{
+    public MainPage()
+    {
         InitializeComponent();
         BindingContext = new AnimalViewModel();
     }
 }
-

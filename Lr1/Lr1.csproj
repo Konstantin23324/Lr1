@@ -61,8 +61,4 @@
 	  <None Remove="Resources\Raw\Animal.json" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="View\" />
-	</ItemGroup>
-
 </Project>

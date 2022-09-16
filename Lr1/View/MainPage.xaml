@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lr1.MainPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Добавить"
+                     Order="Secondary"
+                     Priority="0" 
+                     Command="{Binding AddItemCommand}"/>
+    </ContentPage.ToolbarItems>
 
-        <Grid ColumnDefinitions="*,*">
+    <Grid ColumnDefinitions="*,*">
             <ScrollView Grid.Column="0">
                 <CollectionView ItemsSource="{Binding Animals}"
                                 SelectedItem="{Binding SelectedItem}"

@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Lr1.ViewModel
 {
@@ -40,6 +41,18 @@ namespace Lr1.ViewModel
                 OnPropertyChanged(nameof(Desc));
             }
         }
+        public ICommand AddItemCommand => new Command(() => AddNewItem());
+
+        private void AddNewItem()
+        {
+            Animals.Add(new Animal
+            {
+                Id = Animals.Count + 1,
+                Name = "Title " + Animals.Count,
+                Description = "Description",
+            });
+        }
+
 
 
         async Task GetAnimalsAsync()
